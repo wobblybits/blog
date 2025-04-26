@@ -1,0 +1,28 @@
+<!-- @format -->
+
+<html>
+  <head>
+    <title>Wobbly Bits</title>
+    <link rel="icon" href="favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css?v=0.4" />
+    <link rel="manifest" href="manifest.json?v=0.2" />
+    <script src="js/onebit.js?v=0.2" defer></script>
+    <script src="js/layout.js?v=0.2" defer></script>
+    <script>
+      window.onload = () => {
+        window.addEventListener("hashchange", (e) => {
+          console.log("hashchange", e);
+          init();
+        });
+        init();
+      };
+    </script>
+  </head>
+  <body>
+    <header></header>
+    <main></main>
+    <a href="" id="link" style="display: none"></a>
+    <footer></footer>
+  </body>
+</html>
